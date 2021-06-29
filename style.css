@@ -14,8 +14,8 @@ body{
 
 .d-flex{
     margin-top: 80px;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 34.5%;
+    margin-right: 34.5%;
 }
 
 .IndexButton .btn{
@@ -186,7 +186,7 @@ body{
 .funcion_search_icon > img,
 .funcion_register_icon > img,
 .funcion_studentaid_icon > img{
-    width: 35%;
+    width: 120px;
     margin-top: 20px;
 
 }
