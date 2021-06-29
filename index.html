@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SKKU_sil</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!--팝업 공지-->
+        <script type="text/javascript" src="script2.js"></script>
+        <div id="popup_layer">
+            <div class="popup_box">
+                <!--팝업 컨텐츠 영역-->
+                <div class="popup_cont">
+                    <h2>[ 스꾸실 이용 주의사항 ]</h2>
+                    <p>
+                    1. 타인의 유실물을 임의로 탈취할 경우, 유실물법에 근거하여 <strong>점유이탈물횡령죄</strong>로 처벌받을 수 있습니다. <br>
+                    2. 도배성 게시글 방지를 위해 <strong>'1일 1게시물 원칙'</strong>을 적용하고 있습니다. <br>
+                    3. 본 사이트의 목적과 무관한 홍보성, 유해성 게시물이나 메시지는 사전 경고 없이 삭제 및 회원 탈퇴 될 수 있습니다. <br>
+                    </p>
+                </div>
+                <!--팝업 버튼 영역-->
+                <div class="popup_btn">
+                    <!--하루동안 보지않기-->
+                    <a id="chk_today" href="javascript:closeToday();" class="close_day">하루 동안 보지 않기</a> 
+                    <!--7일간 보지않기-->
+                    <!-- <a id="chk_today" href="javascript:closeToday();" class="close_day">Do not open for 7 days</a>-->
+                    <a href="javascript:closePop();">닫기</a>
+                </div>
+            </div>
+          </div>
+        
+        <!--상단 네비게이션 바-->
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(141, 198, 63);">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html" style="font-size: 30px;">스꾸실 (SKKU_Sil)</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 20px;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-5">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="introduce.html" style="color: white;">스꾸실이란?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#" style="color: white;">주인을 찾아요!</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#" style="color: white;">물건을 찾아요!</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#" style="color: white;">실시간 유실물 현황</a>
+                  </li>
+                </ul>
+                <div class="navbar nav ml-auto">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" class="btn btn-outline-light ml-1" style="background-color:rgb(9, 83, 194);">Sign-up</button>
+                  </div>
+              </div>
+            </div>
+          </nav>
+
+        <!--검색창-->
+        <div class="searchbar">
+        </div>
+        <div class="searchbar">
+            <form class="d-flex">
+                <input class="form-control" type="search" placeholder="유실물 검색하기" aria-label="Search">
+                <button class="btn btn-outline-light ml-1" type="submit">Search</button>
+              </form>
+        </div>
+        
+        <!--신고, 등록 버튼-->
+        <div class="IndexButton">
+            <a href="#" class="btn">분실물 신고</a>
+            <a href="#" class="btn">습득물 등록</a>
+        </div>
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
