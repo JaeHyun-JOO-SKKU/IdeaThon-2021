@@ -6,6 +6,7 @@
     padding:0px;
 }
 
+
 body{
     background-image: url("image/Full.jpg");
     background-size: 100%;
@@ -177,6 +178,7 @@ body{
     height: 302px;
     margin-top: 50px;
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
 }
 
 .funcion3 > li:not(:last-child){
@@ -198,6 +200,152 @@ body{
     font-size: 25px;
     color: rgb(141, 198, 63);
 }
+
+
+.studentaid_head{
+    position: relative;
+    top: -66px;
+    display: flex;
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    list-style: none;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.studentaid_head > li{
+    flex: 1;
+    height: 132px;
+}
+
+.studentaid_head > li > div{
+    text-align: center;
+    margin-top: 40px;
+    height: 57px;
+}
+
+.studentaid_head > li:not(:last-child) > div{
+    border-right: 1px solid gray;
+}
+
+.studentaid_head > li > div > h2{
+    color: rgb(141, 198, 63);
+    display: inline;
+    font-size: 38px;
+    text-decoration: none;
+}
+
+.studentaid_head > li > div > h2 > a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.studentaid_main{
+    margin-top: -130px;
+    width: 100%;
+    background-color: white;
+    height:auto;
+}
+
+.studentaid_main > h1{
+    padding-top: 140px;
+    text-align: center;
+    font-weight: 250;
+    font-size: 40px;
+}
+
+.studentaid_search{
+    margin: 60px 10% 20px 0;
+    text-align: right;
+
+}
+
+.studentaid_select{
+    margin-right: 5px;
+    display: inline;
+}
+
+.studentaid_select1,
+.studentaid_select2{
+    height: 35px;
+    width: 100px;
+    padding: .4em .5em;
+    border: 1px solid gray;
+    margin: 0 3px;
+    border-radius: 0px;
+    font-family: inherit;
+}
+
+.studentaid_searchbar{
+    display: inline;
+}
+
+.studentaid_searchbar_search{
+    height: 35px;
+    width: 250px;
+    border: 1px solid gray;
+    padding: .4em .5em;
+    background-color: white;
+    outline: none;
+}
+
+.studentaid_searchbar_button{
+    background-color: rgb(141, 198, 63);
+    color: white;
+    height: 35px;
+    width: 50px;
+    border: 0px;
+    outline: none;
+}
+
+.studentaid_item_list{
+    width: 80%;
+    margin: 20px auto 100px auto;
+    padding-top: 20px;
+}
+
+.studentaid_item_list .table > thead{
+    text-align: center;
+    background-color: rgb(236, 236, 236);
+}
+
+.studentaid_item_list .table > thead > tr > th{
+    border-bottom: 1px solid black;
+}
+
+.studentaid_item_list .table .item_category{
+    width: 120px;
+}
+.studentaid_item_list .table .item_color{
+    width: 80px;
+}
+.studentaid_item_list .table .item_location{
+    width: 250px;
+}
+.studentaid_item_list .table .item_date{
+    width: 130px;
+}
+
+.studentaid_item_list .table > tbody > tr{
+    transition: 0.4s ease-in-out;
+    border-bottom: 1px solid black;
+}
+
+.studentaid_item_list .table > tbody > tr > th{
+    text-align: center;
+    font-weight: 400;
+}
+
+.studentaid_item_list .table >tbody .item_title{
+    text-align: left;
+    padding-left: 40px;
+}
+
+.studentaid_item_list .table > tbody > tr:hover{
+    background-color: rgb(211, 211, 211);
+}
+
+
 
 /*팝업 공지 관련*/
 #popup_layer {position:fixed;top:0;left:0;z-index: 10000; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4);} 

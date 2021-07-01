@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SKKU_Sil_학지팀 유실물 현황</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!--상단 네이게이션 바 -->
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(141, 198, 63);">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html" style="font-size: 30px;">스꾸실 (SKKU_Sil)</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 20px;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-5">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="introduce.html" style="color: white;"><strong>스꾸실이란?</strong></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#" style="color: white;">주인을 찾아요!</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#" style="color: white;">물건을 찾아요!</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="studentaid.html" style="color: yellow;">학지팀 유실물 현황</a>
+                  </li>
+                </ul>
+                <div class="navbar nav ml-auto">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" class="btn btn-outline-light ml-1" style="background-color:rgb(9, 83, 194);">Sign-up</button>
+                  </div>
+              </div>
+            </div>
+          </nav> 
+          
+        <div class="intro_text">
+            <h1>학생지원팀 유실물 현황 게시판</h1>
+        </div>
+        <div class="studentaid_head">
+            <li><div><h2><a href="studentaid_m.html" style="color:rgb(189, 189, 0);">명륜 캠퍼스</a></h2></div></li>
+            <li><div><h2><a href="studentaid_y.html" style="color:rgb(141, 198, 63)">율전 캠퍼스</a></h2></div></li>
+        </div>
+        <div class="studentaid_main">
+            <h1> 인문사회캠퍼스 학생지원팀 분실물 보관 현황 </h1>
+            <div class="studentaid_search">
+              <div class="studentaid_select">
+                <select class="studentaid_select1">
+                  <option selected>분류 선택</option>
+                  <option value="1">전자기기</option>
+                  <option value="2">지갑/잡화류</option>
+                  <option value="3">카드/신분증</option>
+                  <option value="3">기타</option>
+                </select>
+                <select class="studentaid_select2">
+                  <option selected>전체</option>
+                  <option value="1">제목</option>
+                  <option value="2">내용</option>
+                </select>
+              </div>
+              <div class="studentaid_searchbar">
+                <input class="studentaid_searchbar_search" type="search" placeholder="분실물 검색" aria-label="Search">
+                <button class="studentaid_searchbar_button" type="submit">검색</button>
+              </div>
+            </div>
+            <div class="studentaid_item_list">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="item_category">카테고리</th>
+                    <th class="item_title">제목</th>
+                    <th class="item_color">색상</th>
+                    <th class="item_location">습득장소</th>
+                    <th class="item_date">동록일</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="item_category">전자기기</th>
+                    <th class="item_title">아이패드 프로 5세대 12.9인치</th>
+                    <th class="item_color">회색</th>
+                    <th class="item_location">600주년 기념관 1층 화장실</th>
+                    <th class="item_date">2021-06-30</th>
+                  </tr>
+                  <tr>
+                    <th class="item_category">지갑/잡화류</th>
+                    <th class="item_title">닥스 장지갑</th>
+                    <th class="item_color">검정색</th>
+                    <th class="item_location">경영관 3층 30412호 강의실</th>
+                    <th class="item_date">2021-06-28</th>
+                  </tr>
+                  <tr>
+                    <th class="item_category">카드/신분증</th>
+                    <th class="item_title">국민 나라사랑 체크카드</th>
+                    <th class="item_color">파란색</th>
+                    <th class="item_location">중앙학술정보관 1층 편의점</th>
+                    <th class="item_date">2021-06-28</th>
+                  </tr>
+                  <tr>
+                    <th class="item_category">전자기기</th>
+                    <th class="item_title"><span style="color: red;">[반환완료]</span> 갤럭시 버즈 프로 블루투스 이어폰</th>
+                    <th class="item_color">흰색</th>
+                    <th class="item_location">학생회관 3층 복도</th>
+                    <th class="item_date">2021-06-26</th>
+                  </tr>
+                  <tr>
+                    <th class="item_category">기타</th>
+                    <th class="item_title"><span style="color: red;">[반환완료]</span> E하우스 기숙사 키</th>
+                    <th class="item_color">-</th>
+                    <th class="item_location">인사캠 교내 셔틀버스</th>
+                    <th class="item_date">2021-06-25</th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
