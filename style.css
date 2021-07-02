@@ -300,7 +300,7 @@ body{
 
 .studentaid_item_list{
     width: 80%;
-    margin: 20px auto 100px auto;
+    margin: 20px auto 40px auto;
     padding-top: 20px;
 }
 
@@ -345,7 +345,26 @@ body{
     background-color: rgb(211, 211, 211);
 }
 
+.pagination .page-item{
+    border: 1px solid rgb(180, 180, 180);
+    margin: auto 2px auto 2px;
+    width: fit-content;
+    text-align: center;
+}
 
+.pagination .page-item .page-link{
+    text-align: center;
+    color: #000;
+}
+
+.studentaid_contact{
+    width: 80%;
+    margin: 50px auto;
+    background-color: rgb(142, 198, 63);
+    color: white;
+    height:auto;
+    padding: 10px 50px;
+}
 
 /*팝업 공지 관련*/
 #popup_layer {position:fixed;top:0;left:0;z-index: 10000; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4);} 
