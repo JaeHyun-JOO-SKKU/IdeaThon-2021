@@ -366,6 +366,179 @@ body{
     padding: 10px 50px;
 }
 
+.found_main{
+    margin-top: -130px;
+    width: 100%;
+    background-color: white;
+    height:auto;
+}
+
+.found_main > h1{
+    padding-top: 100px;
+    text-align: center;
+    font-weight: 250;
+    font-size: 40px;
+}
+
+.found_search{
+    margin: 0 auto 20px auto;
+    text-align: center;
+    border: 3px solid rgb(141, 198, 63);
+    width: 400px;
+    padding: 20px 0;
+}
+
+.found_select{
+    margin-right: 5px;
+    display: inline;
+}
+
+.found_select1,
+.found_select2,
+.found_select3{
+    height: 35px;
+    width: 100px;
+    padding: .4em .5em;
+    border: 1px solid gray;
+    margin: 0px auto 10px auto;
+    border-radius: 0px;
+    font-family: inherit;
+}
+
+
+.found_date > input{
+    height: 35px;
+    width: 144px;
+    padding: .4em .5em;
+    border: 1px solid gray;
+    margin: 0 2px;
+    border-radius: 0px;
+    font-family: inherit;
+}
+
+.found_searchbar{
+    margin-top: -13px;
+}
+
+.found_searchbar_search{
+    height: 35px;
+    width: 255px;
+    border: 1px solid gray;
+    padding: .4em .5em;
+    background-color: white;
+    outline: none;
+}
+
+.found_searchbar_button{
+    background-color: rgb(141, 198, 63);
+    color: white;
+    height: 35px;
+    width: 52px;
+    border: 0px;
+    outline: none;
+}
+
+.found_item{
+    width: 80%;
+    margin: 50px auto 50px auto;
+}
+
+.found_item .box > h3 {
+    text-align: center;
+}
+
+/*검색 목록 디자인*/
+.wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 7px;
+}
+
+.card{
+    width: 280px;
+    height: 300px;
+    padding: 150px 50px 10px 10px;
+    background: #fff;
+    position: relative;
+    display: flex;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+.card:before{
+    content:"";
+    position: absolute;
+    top:0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(185, 185, 185, 0.575), rgba(34, 34, 34, 0.678));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.card:hover:before{
+    opacity: 1;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.5s all;
+}
+
+.card:hover .info{
+    opacity: 1;
+    transform:  translateY(0px);
+}
+
+.card .info h1{
+    margin: 0;
+}
+
+.card .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.card .info .btn{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.card .info .btn:hover{
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+}
+
+
+
 /*팝업 공지 관련*/
 #popup_layer {position:fixed;top:0;left:0;z-index: 10000; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4);} 
 /*팝업 박스*/

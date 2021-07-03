@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>스꾸실 : 학지팀 유실물 현황</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!--상단 네이게이션 바 -->
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(141, 198, 63);">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" style="font-size: 30px;"><img src="image/SKKUsilLogo_White.png" width="200px" style="margin-top: -3px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 20px;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-5">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="introduce.html" style="color: white;"><strong>스꾸실이란?</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="found.html" style="color: yellow;">주인을 찾아요!</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="lost.html" style="color: white;">물건을 찾아요!</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="studentaid.html" style="color: white;">학지팀 유실물 현황</a>
+                </li>
+                </ul>
+                <div class="navbar nav ml-auto">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <a href="sign_up.html"><button type="button" class="btn btn-outline-light ml-1" style="background-color:rgb(9, 83, 194);">Sign-up</button></a>
+                </div>
+            </div>
+            </div>
+        </nav>
+        
+        <div class="intro_text">
+            <h1>주인을 찾아요!</h1>
+        </div>
+        <div class="studentaid_head">
+            <li><div><h2><a href="found_list.html" style="color:rgb(189, 189, 0);">습득물 검색</a></h2></div></li>
+            <li><div><h2><a href="found_new.html" style="color:rgb(141, 198, 63);">습득물 등록</a></h2></div></li>
+        </div>
+        <div class="found_main">
+            <h1></h1>
+                <div class="found_search">
+                    <div class="found_select">
+                        <div class="found_checkbox">
+                            <input type="checkbox" name="chk_info" value="명륜"> 명륜 캠퍼스 &nbsp;&nbsp;
+                            <input type="checkbox" name="chk_info" value="율전"> 율전 캠퍼스
+                        </div>
+                        <br>
+                        <select class="found_select1">
+                            <option selected>습득 위치</option>
+                            <option value="경영관">경영관</option>
+                            <option value="수선관">국제관</option>
+                            <option value="다산 경제관">다산 경제관</option>
+                            <option value="퇴계 인문관">퇴계 인문관</option>
+                            <option value="수선관">수선관</option>
+                            <option value="법학관">법학관</option>
+                            <option value="도서관">중앙 도서관</option>
+                            <option value="600주년 기념관">600주년 기념관</option>
+                            <option value="학생회관">학생회관</option>
+                            <option value="교수회관">교수회관</option>
+                            <option value="교외">교외</option>
+                            <option value="기타">기타</option>
+                        </select>
+                        <select class="found_select2">
+                            <option selected>물품 종류</option>
+                            <option value="1">가방</option>
+                            <option value="2">귀금속</option>
+                            <option value="3">서적</option>
+                            <option value="4">의류/잡화</option>
+                            <option value="5">전자기기</option>
+                            <option value="6">지갑/현금</option>
+                            <option value="7">카드</option>
+                            <option value="8">기타</option>
+                        </select>
+                        <select class="found_select3">
+                            <option selected>색상</option>
+                            <option value="1">흰색</option>
+                            <option value="2">회색</option>
+                            <option value="3">빨강</option>
+                            <option value="4">파랑</option>
+                            <option value="5">초록</option>
+                            <option value="6">노랑</option>
+                            <option value="7">기타</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="found_date">   
+                        <input type="date" value="습득기간"> ~  
+                        <input type="date" value="습득기간">
+                    </div>
+                    <br>
+                    <div class="found_searchbar">
+                        <input class="found_searchbar_search" type="search" placeholder="습득물 검색" aria-label="Search">
+                        <button class="found_searchbar_button" type="submit">검색</button>
+                    </div>
+                </div>
+                <div class="found_item">
+                    <div class="wrapper">
+                        <div class="card">
+                            <img src="image/ex1.jpeg">
+                            <div class="info">
+                                <h3>명륜 / 전자담배</h3>
+                                <p>전자기기 / 2021-06-30 <br>
+                                중앙학술정보관 흡연장</p>
+                                <a href="#" class="btn"> 자세히 보기 </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/ex2.jpeg">
+                            <div class="info">
+                                <h3>명륜 / 체크 지갑</h3>
+                                <p>지갑/현금 / 2021-06-28 <br>
+                                경영관 지하 2층 문구점</p>
+                                <a href="#" class="btn"> 자세히 보기 </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/ex3.jpeg">
+                            <div class="info">
+                                <h3>율전 / 무선 마우스</h3>
+                                <p>전자기기 / 2021-06-26<br>
+                                학생회관 1층 복도</p>
+                                <a href="#" class="btn"> 자세히 보기 </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/ex7.jpeg">
+                            <div class="info">
+                                <h3>명륜 / 축구화</h3>
+                                <p>의류/잡화 / 2021-06-25<br>
+                                교내 운동장</p>
+                                <a href="#" class="btn"> 자세히 보기 </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="card">
+                            <img src="image/ex5.jpeg">
+                            <div class="info">
+                                <h3>율전 / 텀블러</h3>
+                                <p>기타 / 2021-06-23<br>
+                                교내 운동장</p>
+                                <a href="#" class="btn"> 자세히 보기 </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/ex8.jpeg">
+                            <div class="info">
+                                <h3>명륜 / 회계원리</h3>
+                                <p>서적 / 2021-06-22<br>
+                                경영관 1층 카페</p>
+                                <a href="#" class="btn"> 자세히 보기 </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/ex9.jpeg">
+                            <div class="info">
+                                <h3>율전 / 우산</h3>
+                                <p>기타 / 2021-06-22<br>
+                                삼성학술정보관 입구</p>
+                                <a href="#" class="btn"> 자세히 보기 </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="image/ex6.jpeg">
+                            <div class="info">
+                                <h3>율전 / 노트북</h3>
+                                <p>전자기기 / 2021-06-22<br>
+                                기숙사 인관 2층</p>
+                                <a href="#" class="btn"> 자세히 보기 </a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="pagination justify-content-center" style="margin-top: 40px;">
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    </ul>
+                </div>
+                <div class="studentaid_contact">
+                    <strong>[문의 및 신고]</strong>
+                    <br>  E-mail : xhzjtm117@g.skku.edu
+                    <br> 
+                    <br> 본 사이트는 분실물을 찾는 중개 기능을 제공할 뿐, 분실이나 도난에 대한 어떠한 책임도 지지 않음을 명시합니다.
+                </div>
+
+            <!--
+            <div style="border: 3px groove  rgb(141, 198, 63); padding:10px;margin-left:300px; margin-right:300px;text-align:center;color:black;">      
+                <form style="display:inline-block;">
+                    <div style="color:black">
+                    <h2><strong>습득물 상세검색</strong></h2>
+                    </div>
+                    <br>   
+                    <input type="checkbox" name="chk_info" value="명륜"> 명륜 캠퍼스
+                    <input type="checkbox" name="chk_info" value="율전"> 율전 캠퍼스
+                    <br>
+                    <select name="loca"style="width:108px;height:22px;">
+                        <option value="">위치</option>
+                        <option value="경영관">경영관</option>
+                        <option value="수선관">국제관</option>
+                        <option value="다산 경제관">다산 경제관</option>
+                        <option value="퇴계 인문관">퇴계 인문관</option>
+                        <option value="수선관">수선관</option>
+                        <option value="법학관">법학관</option>
+                        <option value="도서관">중앙 도서관</option>
+                        <option value="600주년 기념관">600주년 기념관</option>
+                        <option value="학생회관">학생회관</option>
+                        <option value="교수회관">교수회관</option>
+                        <option value="교외">교외</option>
+                        <option value="기타">기타</option>
+                    </select>
+                    &nbsp;&nbsp;
+                    <select name="cate"style="width:108px;height:22px;">
+                        
+                        <option value="">카테고리</option>
+                        <option value="전자기기">전자기기</option>
+                        <option value="서류">서류</option>
+                        <option value="잡화">잡화</option>
+                        <option value="기타">기타</option>
+                    </select>
+                    
+                    <select name="색상"style="width:100px;height:22px;">
+                        <option value="">색상</option>
+                        <option value="흰색">흰색</option>
+                        <option value="회색">회색</option>
+                        <option value="파랑">파랑</option>
+                        <option value="빨강">빨강</option>
+                        <option value="초록">초록</option>
+                        <option value="기타">기타</option>
+                    </select>
+                    
+                    <br>
+                    
+                    <div style="text-align:center">   
+                        <input type="date" value="습득기간"style= "width:108px;height:22px; margin-left:1px"> ~  
+                        <input type="date" value="습득기간"style= "width:108px; height:22px">
+                        <input type="submit" value=" 검색 "style = "width:49px">
+                        <input type="reset" value=" 초기화 "style = "width: 49px">
+                    </div>
+                    <br>
+                    <div></div>
+                    </div>
+                </form>
+            -->
+        </div>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
+
